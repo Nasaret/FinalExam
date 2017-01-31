@@ -1,0 +1,43 @@
+<img ng-src="{{hotel.photos[0]}}" alt="{{hotel.name}}">
+<div class="description">
+  <h2>{{hotel.name}}</h2>
+  <p>{{hotel.description}}</p>
+</div>
+<div>
+  <div>
+  <div class="row">
+    <div class="col-sm-6 col-md-6 col-lg-6 col-xs-12" ng-repeat="room in hotel.rooms">
+      {{room.type}} ({{room.number}})
+      <div ng-repeat="photo in room.photos">
+    <img ng-src="{{photo}}" alt="{{room.description}}">
+    </div>
+  </div>
+  </div>
+  <div class="row">
+    <!-- form comment -->
+    <form class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <div class="form-group">
+        <!-- name -->
+        <label for="formGroupExampleInput">Votre nom</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Votre nom">
+        <!-- note -->
+        <label for="formGroupExampleInput">Votre note /5</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Votre note">
+        <!-- comment -->
+        <div class="form-group">
+           <label for="comment">Votre commentaire</label>
+           <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div>
+        <button>submit</button>
+      </div>
+    </form>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <ul ng-repeat="review in hotel.reviews">
+          <li>{{review.name}}</li>
+          <li>{{review.review}}</li>
+          <li>{{review.rating}}</li>
+        </ul>
+      </div>
+</div>
+</div>
+</div>

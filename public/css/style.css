@@ -1,0 +1,24 @@
+main{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+#navbar{
+	background-color: black;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+li{
+  list-style-type:none;
+}
+h3{
+  color: orange;
+}
+.btn{
+  background-color: orange;
+}
+img{
+  width: 100%;
+}
+#Carousel{
+	margin-bottom: 5%;
+}

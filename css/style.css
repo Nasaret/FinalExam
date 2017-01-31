@@ -1,0 +1,16 @@
+#navbar{
+	background-color: black;
+}
+li{
+  list-style-type:none;
+}
+h3{
+  color: orange;
+}
+.btn{
+  background-color: orange;
+}
+img{
+  width: 100%;
+  height: 400px;
+}
